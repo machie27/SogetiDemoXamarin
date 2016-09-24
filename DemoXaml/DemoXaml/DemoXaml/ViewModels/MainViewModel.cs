@@ -17,7 +17,7 @@ namespace DemoXaml.ViewModels
 
     //https://github.com/jamesmontemagno/MediaPlugin -- media plugin info
     //https://www.microsoft.com/cognitive-services/en-us/computer-vision-api/documentation cognitive services
-    // xaml components
+    // https://developer.xamarin.com/guides/xamarin-forms/controls/  xaml components
 
 
     public class MainViewModel : ViewModelBase
