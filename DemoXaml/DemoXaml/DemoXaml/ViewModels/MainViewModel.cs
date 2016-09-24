@@ -104,6 +104,7 @@ namespace DemoXaml.ViewModels
 
         public async Task<AnalysisResult> GetImageDescription(Stream imageStream)
         {
+            //I know I used my token -- please do not use for your own apps!
             VisionServiceClient visionClient = new VisionServiceClient("c3b0a2e374db48358e440385bb625a5b");
             VisualFeature[] features = { VisualFeature.Tags, VisualFeature.Categories, VisualFeature.Description };
             return await visionClient.AnalyzeImageAsync(imageStream, features.ToList(), null);
