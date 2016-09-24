@@ -1,4 +1,5 @@
-﻿using DemoDataPages.Views;
+﻿using DemoDataPages.ViewModels;
+using DemoDataPages.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,17 @@ namespace DemoDataPages
 {
     public partial class App : Application
     {
+
+        private static ViewModelLocator _locator;
+
+        public static ViewModelLocator Locator
+        {
+            get
+            {
+                return _locator ?? (_locator = new ViewModelLocator());
+            }
+        }
+
         public App()
         {
             InitializeComponent();

@@ -13,6 +13,7 @@ namespace DemoDataPages.Views
         public MainPage()
         {
             InitializeComponent();
+            BindingContext = App.Locator.Main;
         }
     }
 }

@@ -4,6 +4,7 @@
              xmlns:p="clr-namespace:Xamarin.Forms.Pages;assembly=Xamarin.Forms.Pages"
              x:Class="DemoDataPages.Views.MainPage"
              Title="Demo" StyleClass="Events">
+  <!--https://developer.xamarin.com/guides/xamarin-forms/datapages/-->
   <p:ListDataPage.DataSource>
     <p:JsonDataSource Source="http://demo3143189.mockable.io/sessions" />
   </p:ListDataPage.DataSource>

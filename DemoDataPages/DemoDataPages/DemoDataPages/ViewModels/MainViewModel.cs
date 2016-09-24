@@ -9,6 +9,7 @@ namespace DemoDataPages.ViewModels
 {
     public class MainViewModel : ViewModelBase
     {
+        //https://developer.xamarin.com/guides/xamarin-forms/datapages/
         public MainViewModel()
         {
 
