@@ -52,7 +52,7 @@ namespace DemoXaml.WinPhone
             }
 #endif
 
-            Frame rootFrame = Window.Current.Content as Frame;
+        Frame rootFrame = Window.Current.Content as Frame;
 
             // Do not repeat app initialization when the Window already has content,
             // just ensure that the window is active
@@ -101,6 +101,14 @@ namespace DemoXaml.WinPhone
 
             // Ensure the current window is active
             Window.Current.Activate();
+        }
+
+        protected override void OnActivated(IActivatedEventArgs args)
+        {
+
+            Plugin.Media.MediaImplementation.OnFilesPicked(args);
+
+            base.OnActivated(args);
         }
 
         /// <summary>

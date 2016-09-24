@@ -1,7 +1,10 @@
 ﻿{
   "dependencies": {
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+    "Microsoft.ProjectOxford.Face": "1.2.1.1",
+    "Microsoft.ProjectOxford.Vision": "1.0.370",
     "MvvmLightLibs": "5.3.0",
+    "Xam.Plugin.Media": "2.5.1-beta56",
     "Xamarin.Forms": "2.3.2.127"
   },
   "frameworks": {
